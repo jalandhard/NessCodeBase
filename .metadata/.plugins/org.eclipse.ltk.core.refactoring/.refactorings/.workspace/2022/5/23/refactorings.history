@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;com.customized&apos; to &apos;CustomizedFrameowrk&apos;" description="Rename resource &apos;com.customized&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/com.customized" name="CustomizedFrameowrk" stamp="1653984961031" updateReferences="true"/>
+</session>

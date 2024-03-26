@@ -1,0 +1,7 @@
+base\BasePage.class
+utils\CustomLogging.class
+pages\LoginPage.class
+pages\DashboardPage.class
+utils\PropertyReader.class
+utils\WaitForHelper.class
+utils\DriverManager.class

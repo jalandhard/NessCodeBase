@@ -1,0 +1,29 @@
+2022-17-31 18:17:01.290 [main] INFO  utils.CustomLogging - Browser Launch Error
+2022-17-31 18:17:01.441 [main] INFO  utils.CustomLogging - Browser Launch Error
+2022-20-31 18:20:14.650 [main] INFO  utils.CustomLogging - Trying to read data from property file for property name : browser
+2022-20-31 18:20:14.714 [main] INFO  utils.CustomLogging - Browser Launch Error
+2022-20-31 18:20:14.825 [main] INFO  utils.CustomLogging - Trying to read data from property file for property name : url
+2022-20-31 18:20:14.850 [main] INFO  utils.CustomLogging - Trying to read data from property file for property name : browser
+2022-20-31 18:20:14.853 [main] INFO  utils.CustomLogging - Browser Launch Error
+2022-22-31 18:22:32.062 [main] INFO  utils.CustomLogging - Trying to read data from property file for property name : browser
+2022-22-31 18:22:32.143 [main] INFO  utils.CustomLogging - Browser Launch Error
+2022-22-31 18:22:32.283 [main] INFO  utils.CustomLogging - Trying to read data from property file for property name : url
+2022-22-31 18:22:32.312 [main] INFO  utils.CustomLogging - Trying to read data from property file for property name : browser
+2022-22-31 18:22:32.315 [main] INFO  utils.CustomLogging - Browser Launch Error
+2022-32-31 18:32:33.636 [main] INFO  utils.CustomLogging - Trying to read data from property file for property name : browser
+2022-32-31 18:32:36.086 [main] INFO  utils.CustomLogging - Trying to read data from property file for property name : url
+2022-32-31 18:32:45.032 [main] INFO  utils.CustomLogging - Trying to read data from property file for property name : username
+2022-32-31 18:32:45.186 [main] INFO  utils.CustomLogging - Trying to read data from property file for property name : password
+2022-32-31 18:32:45.382 [main] INFO  utils.CustomLogging - Trying to read data from property file for property name : browser
+2022-32-31 18:32:46.285 [main] INFO  utils.CustomLogging - Trying to read data from property file for property name : url
+2022-32-31 18:32:55.364 [main] INFO  utils.CustomLogging - Trying to read data from property file for property name : username
+2022-32-31 18:32:55.514 [main] INFO  utils.CustomLogging - Trying to read data from property file for property name : password
+2022-40-31 18:40:29.100 [main] INFO  utils.CustomLogging - Trying to read data from property file for property name : browser
+2022-40-31 18:40:31.541 [main] INFO  utils.CustomLogging - Trying to read data from property file for property name : url
+2022-40-31 18:40:40.100 [main] INFO  utils.CustomLogging - Trying to read data from property file for property name : username
+2022-40-31 18:40:40.257 [main] INFO  utils.CustomLogging - Trying to read data from property file for property name : password
+2022-40-31 18:40:40.851 [main] INFO  utils.CustomLogging - Trying to read data from property file for property name : browser
+2022-40-31 18:40:41.720 [main] INFO  utils.CustomLogging - Trying to read data from property file for property name : url
+2022-40-31 18:40:50.641 [main] INFO  utils.CustomLogging - Trying to read data from property file for property name : username
+2022-40-31 18:40:50.824 [main] INFO  utils.CustomLogging - Trying to read data from property file for property name : password
+2022-40-31 18:40:55.022 [main] INFO  utils.CustomLogging - Trying to read data from property file for property name : expectedusername

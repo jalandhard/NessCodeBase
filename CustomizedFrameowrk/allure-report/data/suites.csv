@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue May 31 17:09:55 IST 2022","Tue May 31 17:09:55 IST 2022","13","Surefire suite","Surefire test","tests.TestLogin","tests.TestLogin","test1","test1",""
+"passed","Tue May 31 18:40:31 IST 2022","Tue May 31 18:40:40 IST 2022","9172","Surefire suite","Surefire test","tests.TestLogin","tests.TestLogin","loginToVwo","loginToVwo","Verify Login to Vwo"
+"passed","Tue May 31 18:40:41 IST 2022","Tue May 31 18:40:55 IST 2022","13520","Surefire suite","Surefire test","tests.TestLogin","tests.TestLogin","verifyLoggedInUser","verifyLoggedInUser","Verify logged in user"
+"broken","Tue May 31 18:22:32 IST 2022","Tue May 31 18:22:32 IST 2022","0","Surefire suite","Surefire test","tests.TestLogin","tests.TestLogin","teardown","teardown",""
