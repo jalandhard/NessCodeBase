@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage">
+        <methods>
+          <include name="nameBefore"/>
+          <include name="initialize"/>
+          <include name="verifySpotLightSection_FHM_HomePage"/>
+          <include name="nameAfter"/>
+          <include name="navigateToRequiredURL"/>
+          <include name="verifyHeroContainerText_FHM_HomePage"/>
+          <include name="verifyHeroContainerImage_FHM_HomePage"/>
+          <include name="TeardownTest"/>
+        </methods>
+      </class> <!-- com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

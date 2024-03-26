@@ -1,0 +1,516 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>62/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Dec 16 14:58:41 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>2393 seconds (2393010 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage.verify_BrowseByList_CPT_HubPage()'><b>verify_BrowseByList_CPT_HubPage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=78.0.3904.108)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;BLR-P7111163L&apos;, ip: &apos;172.25.36.212&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\p7111163\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61582}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 78.0.3904.108, webStorageEnabled: true}
+Session ID: d9bd640d25675a99567b12068c43b401
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.isEnabled(RemoteWebElement.java:150)
+	at com.wp.pageObjectRepo.GlobalFunctions.verifyBrowseByList(GlobalFunctions.java:931)
+	at com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage.verify_BrowseByList_CPT_HubPage(VerifyGlobalVariables_CPT_HubPage.java:135)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace790538253", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace790538253'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=78.0.3904.108)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;BLR-P7111163L&apos;, ip: &apos;172.25.36.212&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\p7111163\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61582}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 78.0.3904.108, webStorageEnabled: true}
+Session ID: d9bd640d25675a99567b12068c43b401
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.isEnabled(RemoteWebElement.java:150)
+	at com.wp.pageObjectRepo.GlobalFunctions.verifyBrowseByList(GlobalFunctions.java:931)
+	at com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage.verify_BrowseByList_CPT_HubPage(VerifyGlobalVariables_CPT_HubPage.java:135)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>4</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage@69e1dd28</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage.verify_featuredModule_Link4_2_CPT_HubPage()'><b>verify_featuredModule_Link4_2_CPT_HubPage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage</td>
+<td><div><pre>java.lang.AssertionError: Feature module link is not working successfully on site :https://www.constructionprotips.com/jobsite-tips/ After clicking Feature module link, user navigates to : https://www.constructionprotips.com/tools-materials/heavy-equipment/how-to-tow-a-trailer-safely-and-avoid-disasters/ expected [true] but found [false]
+	at com.wp.pageObjectRepo.GlobalFunctions.verifyIsFeaturedModuleWorking(GlobalFunctions.java:578)
+	at com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage.verify_featuredModule_Link4_2_CPT_HubPage(VerifyGlobalVariables_CPT_HubPage.java:229)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1841099284", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1841099284'><pre>java.lang.AssertionError: Feature module link is not working successfully on site :https://www.constructionprotips.com/jobsite-tips/ After clicking Feature module link, user navigates to : https://www.constructionprotips.com/tools-materials/heavy-equipment/how-to-tow-a-trailer-safely-and-avoid-disasters/ expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.wp.pageObjectRepo.GlobalFunctions.verifyIsFeaturedModuleWorking(GlobalFunctions.java:578)
+	at com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage.verify_featuredModule_Link4_2_CPT_HubPage(VerifyGlobalVariables_CPT_HubPage.java:229)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>28</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage@69e1dd28</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage.Pagination_CPT_HubPage()'><b>Pagination_CPT_HubPage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage</td>
+<td></td>
+<td>11</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage@69e1dd28</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage.diyuLogoTest_CPT_HubPage()'><b>diyuLogoTest_CPT_HubPage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage</td>
+<td></td>
+<td>17</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage@69e1dd28</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage.newsletterSignUpTest_CPT_HubPage()'><b>newsletterSignUpTest_CPT_HubPage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage</td>
+<td></td>
+<td>17</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage@69e1dd28</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ArticlePage.newsletterSignUpTest_CPT_HubPage()'><b>newsletterSignUpTest_CPT_HubPage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ArticlePage</td>
+<td></td>
+<td>28</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ArticlePage@c333c60</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage.verifyCardCount_CPT_ListiclePage()'><b>verifyCardCount_CPT_ListiclePage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage</td>
+<td></td>
+<td>0</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage@3738449f</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage.verifyDekTest()'><b>verifyDekTest</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage</td>
+<td></td>
+<td>0</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage@3738449f</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ArticlePage.verifyDekTest()'><b>verifyDekTest</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ArticlePage</td>
+<td></td>
+<td>0</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ArticlePage@c333c60</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ArticlePage.verifyFacebookLink_CPT_ArticlePage()'><b>verifyFacebookLink_CPT_ArticlePage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ArticlePage</td>
+<td></td>
+<td>13</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ArticlePage@c333c60</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage.verifyFacebookLink_CPT_ListiclePage()'><b>verifyFacebookLink_CPT_ListiclePage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage</td>
+<td></td>
+<td>12</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage@3738449f</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage.verifyFirstCustomCategory_FHM_HomePage()'><b>verifyFirstCustomCategory_FHM_HomePage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage</td>
+<td></td>
+<td>249</td>
+<td>com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage@378542de</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage.verifyFirstCustom_Heading_Working_FHM_HomePage()'><b>verifyFirstCustom_Heading_Working_FHM_HomePage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage</td>
+<td></td>
+<td>81</td>
+<td>com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage@378542de</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage.verifyHeroContainerImage_FHM_HomePage()'><b>verifyHeroContainerImage_FHM_HomePage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage</td>
+<td></td>
+<td>72</td>
+<td>com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage@378542de</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage.verifyHeroContainerText_FHM_HomePage()'><b>verifyHeroContainerText_FHM_HomePage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage</td>
+<td></td>
+<td>81</td>
+<td>com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage@378542de</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage.verifyLineTest()'><b>verifyLineTest</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage</td>
+<td></td>
+<td>0</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage@3738449f</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ArticlePage.verifyLineTest()'><b>verifyLineTest</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ArticlePage</td>
+<td></td>
+<td>0</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ArticlePage@c333c60</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage.verifyNativoAdImageWorking_FHM_HomePage()'><b>verifyNativoAdImageWorking_FHM_HomePage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage</td>
+<td></td>
+<td>66</td>
+<td>com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage@378542de</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage.verifyNativoAdLinkWorking_FHM_HomePage()'><b>verifyNativoAdLinkWorking_FHM_HomePage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage</td>
+<td></td>
+<td>66</td>
+<td>com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage@378542de</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage.verifyNativoAd_FHM_HomePage()'><b>verifyNativoAd_FHM_HomePage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage</td>
+<td></td>
+<td>0</td>
+<td>com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage@378542de</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage.verifyOriginallyPublishedBrand_CPT_ListiclePage()'><b>verifyOriginallyPublishedBrand_CPT_ListiclePage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage</td>
+<td></td>
+<td>0</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage@3738449f</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage.verifyOriginallyPublishedURL_CPT_ListiclePage()'><b>verifyOriginallyPublishedURL_CPT_ListiclePage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage</td>
+<td></td>
+<td>0</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage@3738449f</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ArticlePage.verifyPinteresttLink_CPT_ArticlePage()'><b>verifyPinteresttLink_CPT_ArticlePage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ArticlePage</td>
+<td></td>
+<td>3</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ArticlePage@c333c60</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage.verifyPinteresttLink_CPT_ListiclePage()'><b>verifyPinteresttLink_CPT_ListiclePage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage</td>
+<td></td>
+<td>3</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage@3738449f</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_VideoPage.verifyPlayerContainer_CPT_VideoPage()'><b>verifyPlayerContainer_CPT_VideoPage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_VideoPage</td>
+<td></td>
+<td>0</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_VideoPage@11bd0f3b</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage.verifyPostDate_CPT_ListiclePage()'><b>verifyPostDate_CPT_ListiclePage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage</td>
+<td></td>
+<td>0</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage@3738449f</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage.verifySecondCustomCategory_FHM_HomePage()'><b>verifySecondCustomCategory_FHM_HomePage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage</td>
+<td></td>
+<td>188</td>
+<td>com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage@378542de</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage.verifySecondCustom_Heading_Working_FHM_HomePage()'><b>verifySecondCustom_Heading_Working_FHM_HomePage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage</td>
+<td></td>
+<td>61</td>
+<td>com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage@378542de</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage.verifySecondCustom_MoreButton()'><b>verifySecondCustom_MoreButton</b><br>Test class: com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage</td>
+<td></td>
+<td>66</td>
+<td>com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage@378542de</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage.verifySpotLightSection_FHM_HomePage()'><b>verifySpotLightSection_FHM_HomePage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage</td>
+<td></td>
+<td>260</td>
+<td>com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage@378542de</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage.verifyTaboolaContainer_CPT_ListiclePage()'><b>verifyTaboolaContainer_CPT_ListiclePage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage</td>
+<td></td>
+<td>1</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage@3738449f</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ArticlePage.verifyTaboolaSidebarTest()'><b>verifyTaboolaSidebarTest</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ArticlePage</td>
+<td></td>
+<td>0</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ArticlePage@c333c60</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage.verifyTaboolaSidebar_CPT_ListiclePage()'><b>verifyTaboolaSidebar_CPT_ListiclePage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage</td>
+<td></td>
+<td>0</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage@3738449f</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ArticlePage.verifyTitle_CPT_ArticlePage()'><b>verifyTitle_CPT_ArticlePage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ArticlePage</td>
+<td></td>
+<td>0</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ArticlePage@c333c60</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage.verifyTitle_CPT_ListiclePage()'><b>verifyTitle_CPT_ListiclePage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage</td>
+<td></td>
+<td>0</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage@3738449f</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ArticlePage.verifyTwitterLink_CPT_ArticlePage()'><b>verifyTwitterLink_CPT_ArticlePage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ArticlePage</td>
+<td></td>
+<td>3</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ArticlePage@c333c60</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage.verifyTwitterLink_CPT_ListiclePage()'><b>verifyTwitterLink_CPT_ListiclePage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage</td>
+<td></td>
+<td>3</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage@3738449f</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage.verifyUpdatedDateTest_CPT_HubPage()'><b>verifyUpdatedDateTest_CPT_HubPage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage</td>
+<td></td>
+<td>0</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage@3738449f</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage.verifyVideoContainerAvailable_FHM_HomePage()'><b>verifyVideoContainerAvailable_FHM_HomePage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage</td>
+<td></td>
+<td>0</td>
+<td>com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage@378542de</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_VideoPage.verifyVideoFeaturedPlaylistLinks_CPT_VideoPage()'><b>verifyVideoFeaturedPlaylistLinks_CPT_VideoPage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_VideoPage</td>
+<td></td>
+<td>117</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_VideoPage@11bd0f3b</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_VideoPage.verifyVideoPlaylistDots_CPT_VideoPage()'><b>verifyVideoPlaylistDots_CPT_VideoPage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_VideoPage</td>
+<td></td>
+<td>5</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_VideoPage@11bd0f3b</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_VideoPage.verifyVideoPlaylistNextArrow_CPT_VideoPage()'><b>verifyVideoPlaylistNextArrow_CPT_VideoPage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_VideoPage</td>
+<td></td>
+<td>5</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_VideoPage@11bd0f3b</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_VideoPage.verifyVideoPlaylistPreviousArrow_CPT_VideoPage()'><b>verifyVideoPlaylistPreviousArrow_CPT_VideoPage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_VideoPage</td>
+<td></td>
+<td>5</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_VideoPage@11bd0f3b</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_VideoPage.verifyVideoPlaylistSlider_CPT_VideoPage()'><b>verifyVideoPlaylistSlider_CPT_VideoPage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_VideoPage</td>
+<td></td>
+<td>0</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_VideoPage@11bd0f3b</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_VideoPage.verifyVideoPlaylistThumbnailImage_CPT_VideoPage()'><b>verifyVideoPlaylistThumbnailImage_CPT_VideoPage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_VideoPage</td>
+<td></td>
+<td>88</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_VideoPage@11bd0f3b</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage.verifyVideos_Clickable_FHM_HomePage()'><b>verifyVideos_Clickable_FHM_HomePage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage</td>
+<td></td>
+<td>20</td>
+<td>com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage@378542de</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage.verifyWatchMoreVideos_FHM_HomePage()'><b>verifyWatchMoreVideos_FHM_HomePage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage</td>
+<td></td>
+<td>89</td>
+<td>com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage@378542de</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage.verify_ArchieveDescription_CPT_HubPage()'><b>verify_ArchieveDescription_CPT_HubPage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage</td>
+<td></td>
+<td>0</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage@69e1dd28</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage.verify_Banner_CPT_HubPage()'><b>verify_Banner_CPT_HubPage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage</td>
+<td></td>
+<td>0</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage@69e1dd28</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage.verify_BreadCrumb_CPT_HubPage()'><b>verify_BreadCrumb_CPT_HubPage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage</td>
+<td></td>
+<td>0</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage@69e1dd28</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage.verify_Title_CPT_HubPage()'><b>verify_Title_CPT_HubPage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage</td>
+<td></td>
+<td>0</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage@69e1dd28</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage.verify_featuredModule_Image4_1_CPT_HubPage()'><b>verify_featuredModule_Image4_1_CPT_HubPage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage</td>
+<td></td>
+<td>103</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage@69e1dd28</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage.verify_featuredModule_Image4_2_CPT_HubPage()'><b>verify_featuredModule_Image4_2_CPT_HubPage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage</td>
+<td></td>
+<td>104</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage@69e1dd28</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage.verify_featuredModule_Image5_1_CPT_HubPage()'><b>verify_featuredModule_Image5_1_CPT_HubPage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage</td>
+<td></td>
+<td>96</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage@69e1dd28</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage.verify_featuredModule_Link4_1_CPT_HubPage()'><b>verify_featuredModule_Link4_1_CPT_HubPage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage</td>
+<td></td>
+<td>54</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage@69e1dd28</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage.verify_featuredModule_Link5_1_CPT_HubPage()'><b>verify_featuredModule_Link5_1_CPT_HubPage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage</td>
+<td></td>
+<td>64</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage@69e1dd28</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage.verify_heroContainerImage_CPT_HubPage()'><b>verify_heroContainerImage_CPT_HubPage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage</td>
+<td></td>
+<td>14</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage@69e1dd28</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage.verify_heroContainerLink_CPT_HubPage()'><b>verify_heroContainerLink_CPT_HubPage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage</td>
+<td></td>
+<td>7</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage@69e1dd28</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage.verifycardCaption_CPT_ListiclePage()'><b>verifycardCaption_CPT_ListiclePage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage</td>
+<td></td>
+<td>0</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage@3738449f</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage.verifycardImageCredit_CPT_ListiclePage()'><b>verifycardImageCredit_CPT_ListiclePage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage</td>
+<td></td>
+<td>0</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage@3738449f</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage.verifycardImage_CPT_ListiclePage()'><b>verifycardImage_CPT_ListiclePage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage</td>
+<td></td>
+<td>0</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage@3738449f</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage.verifycardPageCount_CPT_ListiclePage()'><b>verifycardPageCount_CPT_ListiclePage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage</td>
+<td></td>
+<td>0</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage@3738449f</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage.verifycardTitle_CPT_ListiclePage()'><b>verifycardTitle_CPT_ListiclePage</b><br>Test class: com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage</td>
+<td></td>
+<td>0</td>
+<td>com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ListiclePage@3738449f</td></tr>
+<tr>
+<td title='com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage.verifyfirstCustomer_MoreButton()'><b>verifyfirstCustomer_MoreButton</b><br>Test class: com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage</td>
+<td></td>
+<td>79</td>
+<td>com.wp.wpqa_64_verify_global_variables_FHM.VerifyGlobalVariables_FHM_HomePage@378542de</td></tr>
+</table><p>
+</body>
+</html>

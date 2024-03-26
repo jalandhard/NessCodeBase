@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GA suite" parallel="tests" thread-count="1">
+	<listeners>
+		<listener class-name="com.wp.listener.ExtentReporterNG" />
+	</listeners>
+
+	<test name="Brand Tests">
+		<classes>
+			<class name="com.GA.generalTests.BrandTests" />
+		</classes>
+	</test>
+	
+	<test name="Hub Tests">
+		<classes>
+			<class name="com.GA.generalTests.HubTests" />
+		</classes>
+	</test>
+	
+	<test name="Listicle Use Case Tests">
+		<classes>
+			<class name="com.GA.listicleUseCases.ListicleUseCaseTests" />
+		</classes>
+	</test>
+	
+	<test name="Global Tests">
+		<classes>
+			<class name="com.GA.generalTests.GlobalTests" />
+		</classes>
+	</test>
+	
+	<test name="Listicle Tests">
+		<classes>
+			<class name="com.GA.generalTests.ListicleTests" />
+		</classes>
+	</test>
+	
+	<!-- Needs chrome emulator
+	<test name="Global Tests">
+		<classes>
+			<class name="com.GA.generalTests.GlobalTests" />
+		</classes>
+	</test>
+	-->
+
+</suite> <!-- Suite -->

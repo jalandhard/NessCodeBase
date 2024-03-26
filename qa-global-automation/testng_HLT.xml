@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GA suite" parallel="instances" thread-count="1">
+	<listeners>
+		<listener class-name="com.wp.listener.ExtentReporterNG" />
+	</listeners>
+	<test name=" HLT Article Page">
+		<classes>
+			<class name="com.GA.HLT.HLT_ArticlePage" />
+		</classes>
+	</test>
+	<test name=" HLT Author Hub Page">
+		<classes>
+			<class name="com.GA.HLT.HLT_AuthorHubPage" />
+		</classes>
+	</test>
+	<test name="HLT HomePage">
+		<classes>
+			<class name="com.GA.HLT.HLT_HomePage" />
+		</classes>
+	</test>
+	<test name="HLT Listicle Page">
+		<classes>
+			<class name="com.GA.HLT.HLT_ListiclePage" />
+		</classes>
+	</test>
+	<test name="HLT Footer Test">
+		<classes>
+			<class name="com.GA.HLT.HLT_FooterTests" />
+		</classes>
+	</test>
+	<test name="HLT Navbars">
+		<classes>
+			<class name="com.GA.HLT.HLT_newNavbarTests" />
+		</classes>
+	</test>
+	<!-- <test name=" HLT Hub Page">
+		<classes>
+			<class name="com.GA.HLT.HLT_HubPage" />
+		</classes>
+	</test> -->
+	<test name=" HLT video Page">
+		<classes>
+			<class name="com.GA.HLT.HLT_VideoPage" />
+		</classes>
+	</test>
+	</suite> <!-- Suite -->

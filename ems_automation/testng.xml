@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="EMS suite" parallel="instances" thread-count="1">
+	<test name="EMSTestSuite">
+		<classes>
+			<class name="tests.LoginPageTests"></class>
+			<class name="tests.HomeTests"></class>
+			<!--<class name="tests.SelectionDatesPageTests"></class>-->
+			<class name="tests.SelectionPageTests"></class>
+		</classes>
+	</test>
+	<!-- 	<listeners>
+		<listener class-name="com.wp.listener.ExtentReporterNG" />
+	</listeners>
+	<test name="FHM HomePage">
+		<classes>
+			<class name="com.wpqa269.GA.FHM_HomePage" />
+		</classes>
+	</test>
+	<test name="FHM ProjectDetail Page">
+		<classes>
+			<class name="com.wpqa269.GA.FHM_ProjectDetailPage" />
+		</classes>
+	</test> -->
+
+</suite>

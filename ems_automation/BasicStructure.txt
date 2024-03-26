@@ -1,0 +1,53 @@
+Framework Level : 
+Build Management - Maven
+Test Managament - TestNG
+Configuration Management - Properties(DB related info, Setup, browser), Excel(Data required for populating)
+Logging - log4j.properties
+Reporting Framework - Surefire and Allure
+Page Object Model with PageFactory Initialization
+
+Framework Package/Folder Structure :
+src/main/java
+	general
+	dao
+	utils
+	pages
+src/main/resources
+	drivers
+	datafiles
+src/test/java
+	tests
+src/test/resources
+	configs
+
+src/main/java	
+general -   BasePage.java - Which will be having comman util method
+				BaseTest.java - Which will be perform basic initialization like driver initialization, config files loading etc
+				Link.java - Not seeing any usage as of now(Probably used in project only for validating the link address)
+dao	   - 	All DB Entity/Pojo kind of class mainly used for data validations with DB
+utils	   -	Generic Librabries like ConfigReader.java, DBManager.java, DBUtils.java(Having DB related methods like quering tables and returning data in class structured format), ExcelReader.java, ScreenShot Capturing and comparing If any
+				DatabaseClear.java - Truncating/Deleting new data from database once suite has run successfully
+pages   -	As all Pages related informations like page locators and page methods only. Every class extends BasePage.java from general package. Will USe PageFactory for page object initialization.
+
+src/main/resources
+drivers	-	All drivers like chromedriver.exe, geckodriver.exe etc
+datafiles-	Have all new data for insertion into form on xls format
+
+src/test/java
+tests		-	As all test cases mapping
+
+src/test/resources
+configs	-	As all configuration related like browser, environment, DB Related properties, DB Queries(mainly select queries for fetching data from databases)
+
+
+
+Pre-Requisties(Needs) : 
+Properties
+Excel - For reading the data to populate DB's
+DB Connectivity - Reading data in structured way and comparing with data used for populating
+
+Notes:
+Any new page addition, below 2 steps as to be done :
+	1. Creation of Page Class in pages package
+	2. Addition of page class variable in BaseTest class in general package
+Read all data from the grid after filtering and store in Pojo Class for comparision

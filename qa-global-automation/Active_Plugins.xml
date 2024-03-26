@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GA suite" parallel="instances" thread-count="1">
+	<listeners>
+		<listener class-name="com.wp.listener.ExtentReporterNG" />
+	</listeners>
+	<test name="BHC Active Plugins">
+		<classes>
+			<class name="com.GA.ActivePlugins.BHC_VerifyActivePlugins" />
+		</classes>
+	</test>
+	<test name="FHM Active Plugins">
+		<classes>
+			<class name="com.GA.ActivePlugins.FHM_VerifyActivePlugins" />
+		</classes>
+	</test>
+	<test name="RDC Active Plugins">
+		<classes>
+			<class name="com.GA.ActivePlugins.RDC_VerifyActivePlugins" />
+		</classes>
+	</test>
+	<test name="HLT Active Plugins">
+		<classes>
+			<class name="com.GA.ActivePlugins.HLT_VerifyActivePlugins" />
+		</classes>
+	</test>
+	<test name="RD Active Plugins">
+		<classes>
+			<class name="com.GA.ActivePlugins.RD_VerifyActivePlugins" />
+		</classes>
+	</test>
+	<test name="SRD Active Plugins">
+		<classes>
+			<class name="com.GA.ActivePlugins.SRD_VerifyActivePlugins" />
+		</classes>
+	</test>
+	<test name="TOH Active Plugins">
+		<classes>
+			<class name="com.GA.ActivePlugins.TOH_VerifyActivePlugins" />
+		</classes>
+	</test>
+	<test name="BNB Active Plugins">
+		<classes>
+			<class name="com.GA.ActivePlugins.BNB_VerifyActivePlugins" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->

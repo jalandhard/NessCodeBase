@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GA suite" parallel="instances" thread-count="1">
+	<listeners>
+		<listener class-name="com.wp.listener.ExtentReporterNG" />
+	</listeners>
+	<test name="TOH Header">
+		<classes>
+			 <class name="com.GA.TOH.TOH_NavbarTests"/>
+		</classes>
+	</test>
+	<!-- <test name="TOH Subcat Hub Page">
+		<classes>
+			 <class name="com.GA.TOH.TOH_SubcatHubPage"/>
+		</classes>
+	</test> -->
+	<test name="TOH Recipe Detail">
+		<classes>
+			<class name="com.GA.TOH.TOH_RecipeDetail" />
+		</classes>
+	</test>
+	<!-- <test name="TOH Hub Page">
+		<classes>
+			 <class name="com.GA.TOH.TOH_HubPage"/>
+		</classes>
+	</test> -->
+	<test name="TOH Home Page">
+		<classes>
+			<class name="com.GA.TOH.TOH_HomePage"/>
+		</classes>
+	</test>
+	<test name="TOH Video Page">
+		<classes>
+			<class name="com.GA.TOH.TOH_VideoPage"/>
+		</classes>
+	</test>
+	<test name="TOH Footer Tests">
+		<classes>
+			<class name="com.GA.TOH.TOH_FooterTests"/>
+		</classes>
+	</test>
+	<test name="TOH Listicle Page">
+		<classes>
+			 <class name="com.GA.TOH.TOH_ListiclePage"/>
+		</classes>
+	</test>
+	<test name="TOH Article Page">
+		<classes>
+			 <class name="com.GA.TOH.TOH_ArticlePage"/>
+		</classes>
+	</test>
+	<test name="TOH Native Template">
+		<classes>
+			 <class name="com.GA.TOH.TOH_NativeTemplate"/>
+		</classes>
+	</test>
+</suite> <!-- Suite -->

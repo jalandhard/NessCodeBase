@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GA Suite" parallel="instances" thread-count="1">
+	<listeners>
+		<listener class-name="com.wp.listener.ExtentReporterNG" />
+	</listeners>
+		<test name="BHC NavbarPage">
+		<classes>
+			<class name="com.GA.BHC.BHC_NavbarTests" />
+		</classes>
+	</test>
+	<test name = "SRD Header Test">
+      	<classes>
+      			<class name="com.GA.SRD.SRD_NavbarTests"/>
+      	</classes>
+      </test>
+      <test name="RDC Header Test">
+		<classes>
+			<class name="com.GA.RDC.RDC_NavbarTests" />
+		</classes>
+	</test>
+	<test name="RD Header Test">
+		<classes>
+			<class name="com.GA.RD.RD_NavbarTests" />
+		</classes>
+	</test>
+	<test name="HLT Header Test">
+		<classes>
+			<class name="com.GA.HLT.HLT_NavbarTests" />
+		</classes>
+	</test>
+	<test name="FHM Header Test">
+		<classes>
+			<class name="com.GA.FHM.NavbarTests" />
+		</classes>
+	</test>
+	 <!-- Test -->
+</suite> <!-- Suite -->

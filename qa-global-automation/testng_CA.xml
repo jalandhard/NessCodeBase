@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GA Suite" parallel="instances" thread-count="1">
+	<listeners>
+		<listener class-name="com.wp.listener.ExtentReporterNG" />
+	</listeners>
+	<test name="BHC_ArticlePage">
+		<classes>
+			<class name="com.GA.BHC.BHC_ArticlePage" />
+		</classes>
+	</test>
+	<test name="BHC_ListiclePage">
+		<classes>
+			<class name="com.GA.BHC.BHC_ListiclePage" />
+		</classes>
+	</test>
+	<test name="BHC VideoPage">
+		<classes>
+			<class name="com.GA.BHC.BHC_VideoPage" />
+		</classes>
+	</test>
+	<test name="BHC Header Test">
+		<classes>
+			<class name="com.GA.BHC.BHC_NavbarTests" />
+		</classes>
+	</test>
+	<test name="BHC HomePage">
+		<classes>
+			<class name="com.GA.BHC.BHC_HomePage" />
+		</classes>
+	</test>
+	<test name="RDC HubPage">
+		<classes>
+			<class name="com.GA.BHC.BHC_HubPage" />
+		</classes>
+	</test>
+	<test name="BHC FooterPage">
+		<classes>
+			<class name="com.GA.BHC.BHC_FooterTests" />
+		</classes>
+	</test> 
+	<test name="BHC HubPage">
+		<classes>
+			<class name="com.GA.RDC.RDC_HubPage" />
+		</classes>
+	</test>
+	<test name="RDC VideoPage">
+		<classes>
+			<class name="com.GA.RDC.RDC_VideoPage" />
+		</classes>
+	</test>
+	<test name="RDC ListiclePage">
+		<classes>
+			<class name="com.GA.RDC.RDC_ListiclePage" />
+		</classes>
+	</test>
+	<test name="RDC FooterTests">
+		<classes>
+			<class name="com.GA.RDC.RDC_FooterTests" />
+		</classes>
+	</test>
+	<test name="RDC HomePage">
+		<classes>
+			<class name="com.GA.RDC.RDC_HomePage" />
+		</classes>
+	</test>
+	<test name="RDC ArticlePage">
+		<classes>
+			<class name="com.GA.RDC.RDC_ArticlePage" />
+		</classes>
+	</test>
+	<test name="SRD HomePage">
+   	 	<classes>
+      		<class name="com.GA.SRD.SRD_HomePage"/>
+      	</classes>
+      </test>
+      <test name = "SRD Footer Tests">
+      	<classes>
+      		<class name="com.GA.SRD.SRD_FooterTests"/>
+      	</classes>
+      </test>
+      <test name = "SRD Article Page">
+      	<classes>
+     		 <class name="com.GA.SRD.SRD_ArticlePage"/>
+      	</classes>
+      </test>
+      <test name = "SRD Hub Page">
+      	<classes>
+      		<class name="com.GA.SRD.SRD_HubPage"/>
+      	</classes>
+      </test>
+      <!-- <test name = "SRD Header Test">
+      	<classes>
+      			<class name="com.GA.SRD.SRD_NavbarTests"/>
+      	</classes>
+      </test> -->
+      <test name = "SRD Listicle Page">
+      		<classes>
+      			<class name="com.GA.SRD.SRD_ListiclePage"/>
+      		</classes>
+      </test>
+      <test name = "SRD Video Page">
+      	<classes>
+      		<class name="com.GA.SRD.SRD_VideoPage"/>
+    </classes>
+  </test><!-- Test -->
+</suite> <!-- Suite -->

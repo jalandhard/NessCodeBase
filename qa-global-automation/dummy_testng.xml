@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GA Suite" parallel="instances" thread-count="1">
+	<listeners>
+		<listener class-name="com.wp.listener.ExtentReporterNG" />
+	</listeners>
+
+	<test name="BHC_VideoPage">
+		<classes>
+			<class name="com.GA.BHC.BHC_VideoPage" />
+		</classes>
+	</test>
+	
+	<test name="FHM Video Page">
+		<classes>
+			<class name="com.GA.FHM.FHM_VideoPage" />
+		</classes>
+	</test>
+	
+	<test name="HLT Video Page">
+		<classes>
+			<class name="com.GA.HLT.HLT_VideoPage" />
+		</classes>
+	</test>
+	
+	<test name="RD Video Page">
+		<classes>
+			<class name="com.GA.RD.RD_VideoPage" />
+		</classes>
+	</test>
+	 
+	<test name="RDC VideoPage">
+		<classes>
+			<class name="com.GA.RDC.RDC_VideoPage" />
+		</classes>
+	</test>
+	
+	<test name = "SRD Video Page">
+      	<classes>
+      		<class name="com.GA.SRD.SRD_VideoPage"/>
+      	</classes>
+     </test>
+</suite> <!-- Suite -->

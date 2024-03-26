@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GA suite" parallel="instances" thread-count="1">
+	<listeners>
+		<listener class-name="com.wp.listener.ExtentReporterNG" />
+	</listeners>
+	<test name=" RD Article Page">
+		<classes>
+			<class name="com.GA.RD.RD_ArticlePage" />
+		</classes>
+	</test>
+	<test name=" RD Author Hub Page">
+		<classes>
+			<class name="com.GA.RD.RD_AuthorHubPage" />
+		</classes>
+	</test>
+	<test name="RD HomePage">
+		<classes>
+			<class name="com.GA.RD.RD_HomePage" />
+		</classes>
+	</test>
+	<test name="RD Joke Page">
+		<classes>
+			<class name="com.GA.RD.RD_JokePage" />
+		</classes>
+	</test>
+	<test name="RD Listicle Page">
+		<classes>
+			<class name="com.GA.RD.RD_ListiclePage" />
+		</classes>
+	</test>
+	<test name="RD Footer Test">
+		<classes>
+			<class name="com.GA.RD.RD_FooterTests" />
+		</classes>
+	</test>
+	<test name="RD Navbars">
+		<classes>
+			<class name="com.GA.RD.RD_NavbarTests" />
+		</classes>
+	</test>
+	<!-- <test name=" RD Hub Page">
+		<classes>
+			<class name="com.GA.RD.RD_newHubPage" />
+		</classes>
+	</test> -->
+	<test name=" RD video Page">
+		<classes>
+			<class name="com.GA.RD.RD_VideoPage" />
+		</classes>
+	</test>
+	</suite> <!-- Suite -->
+

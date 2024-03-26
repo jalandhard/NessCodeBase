@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GA Suite" parallel="instances" thread-count="1">
+	<listeners>
+		<listener class-name="com.wp.listener.ExtentReporterNG" />
+	</listeners>
+	<test name="BHC_ArticlePage">
+		<classes>
+			<class name="com.GA.BHC.BHC_ArticlePage" />
+		</classes>
+	</test>
+	<test name="BHC_ListiclePage">
+		<classes>
+			<class name="com.GA.BHC.BHC_ListiclePage" />
+		</classes>
+	</test>
+	<test name="RDC VideoPage">
+		<classes>
+			<class name="com.GA.BHC.BHC_VideoPage" />
+		</classes>
+	</test>
+	 <test name="RDC NavbarPage">
+		<classes>
+			<class name="com.GA.BHC.BHC_newNavbarTests" />
+		</classes>
+	</test> 
+	<test name="RDC HomePage">
+		<classes>
+			<class name="com.GA.BHC.BHC_HomePage" />
+		</classes>
+	</test>
+	<!-- <test name="RDC HubPage">
+		<classes>
+			<class name="com.GA.BHC.BHC_HubPage" />
+		</classes>
+	</test> -->
+	<test name="RDC FooterPage">
+		<classes>
+			<class name="com.GA.BHC.BHC_FooterTests" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GA Suite" parallel="instances" thread-count="1">
+	<listeners>
+		<listener class-name="com.wp.listener.ExtentReporterNG" />
+	</listeners>
+	<test name="BNB Header">
+		<classes>
+			<class name="com.GA.BNB.BNB_newNavbarTests" />
+		</classes>
+	</test>
+	<test name="BNB ArticlePage">
+		<classes>
+			<class name="com.GA.BNB.BNB_ArticlePage" />
+		</classes>
+	</test>
+	<test name="BNB FooterTests">
+		<classes>
+			<class name="com.GA.BNB.BNB_FooterTests" />
+		</classes>
+	</test>
+	<test name="BNB BNB_BackyardProjects">
+		<classes>
+			<class name="com.GA.BNB.BNB_BackyardProjects" />
+		</classes>
+	</test>
+	<test name="BNB AuthorHubPage">
+		<classes>
+			<class name="com.GA.BNB.BNB_AuthorHubPage" />
+		</classes>
+	</test>
+	<!-- <test name="BNB HubPage">
+		<classes>
+			<class name="com.GA.BNB.BNB_HubPage" />
+		</classes>
+	</test> -->
+	<test name="BNB HomePage">
+		<classes>
+			<class name="com.GA.BNB.BNB_HomePage" />
+		</classes>
+	</test>
+	<test name="BNB BirdSpecies">
+		<classes>
+			<class name="com.GA.BNB.BNB_BirdSpecies" />
+		</classes>
+	</test>
+	<test name="BNB BlogPosts">
+		<classes>
+			<class name="com.GA.BNB.BNB_BlogPosts" />
+		</classes>
+	</test>
+	<test name="BNB Top10sArticlePage">
+		<classes>
+			<class name="com.GA.BNB.BNB_Top10sArticlePage" />
+		</classes>
+	</test>
+	<test name="BNB Listicle Page">
+		<classes>
+			<class name="com.GA.BNB.BNB_ListiclePage" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->

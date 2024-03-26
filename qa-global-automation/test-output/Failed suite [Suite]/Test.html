@@ -1,0 +1,234 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>31/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jun 26 14:51:58 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>1799 seconds (1799340 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueCPT.confirmPosHasValueCPT_ArticlePage()'><b>confirmPosHasValueCPT_ArticlePage</b><br>Test class: com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueCPT</td>
+<td></td>
+<td>52</td>
+<td>com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueCPT@223d2c72</td></tr>
+<tr>
+<td title='com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueCPT.confirmPosHasValueCPT_ContactUsPage()'><b>confirmPosHasValueCPT_ContactUsPage</b><br>Test class: com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueCPT</td>
+<td></td>
+<td>35</td>
+<td>com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueCPT@223d2c72</td></tr>
+<tr>
+<td title='com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueCPT.confirmPosHasValueCPT_HomePage()'><b>confirmPosHasValueCPT_HomePage</b><br>Test class: com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueCPT</td>
+<td></td>
+<td>24</td>
+<td>com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueCPT@223d2c72</td></tr>
+<tr>
+<td title='com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueCPT.confirmPosHasValueCPT_HubPage()'><b>confirmPosHasValueCPT_HubPage</b><br>Test class: com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueCPT</td>
+<td></td>
+<td>22</td>
+<td>com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueCPT@223d2c72</td></tr>
+<tr>
+<td title='com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueCPT.confirmPosHasValueCPT_ListiclePage()'><b>confirmPosHasValueCPT_ListiclePage</b><br>Test class: com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueCPT</td>
+<td></td>
+<td>43</td>
+<td>com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueCPT@223d2c72</td></tr>
+<tr>
+<td title='com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueCPT.confirmPosHasValueCPT_SlideshowPage()'><b>confirmPosHasValueCPT_SlideshowPage</b><br>Test class: com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueCPT</td>
+<td></td>
+<td>66</td>
+<td>com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueCPT@223d2c72</td></tr>
+<tr>
+<td title='com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueCPT.confirmPosHasValueCPT_VideoHubPage()'><b>confirmPosHasValueCPT_VideoHubPage</b><br>Test class: com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueCPT</td>
+<td></td>
+<td>45</td>
+<td>com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueCPT@223d2c72</td></tr>
+<tr>
+<td title='com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueFHM.confirmPosHasValueFHM_ArticlePage()'><b>confirmPosHasValueFHM_ArticlePage</b><br>Test class: com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueFHM</td>
+<td></td>
+<td>39</td>
+<td>com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueFHM@8f4ea7c</td></tr>
+<tr>
+<td title='com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueFHM.confirmPosHasValueFHM_ContactUsPage()'><b>confirmPosHasValueFHM_ContactUsPage</b><br>Test class: com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueFHM</td>
+<td></td>
+<td>34</td>
+<td>com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueFHM@8f4ea7c</td></tr>
+<tr>
+<td title='com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueFHM.confirmPosHasValueFHM_HomePage()'><b>confirmPosHasValueFHM_HomePage</b><br>Test class: com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueFHM</td>
+<td></td>
+<td>78</td>
+<td>com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueFHM@8f4ea7c</td></tr>
+<tr>
+<td title='com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueFHM.confirmPosHasValueFHM_HubPage()'><b>confirmPosHasValueFHM_HubPage</b><br>Test class: com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueFHM</td>
+<td></td>
+<td>23</td>
+<td>com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueFHM@8f4ea7c</td></tr>
+<tr>
+<td title='com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueFHM.confirmPosHasValueFHM_ListiclePage()'><b>confirmPosHasValueFHM_ListiclePage</b><br>Test class: com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueFHM</td>
+<td></td>
+<td>76</td>
+<td>com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueFHM@8f4ea7c</td></tr>
+<tr>
+<td title='com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueFHM.confirmPosHasValueFHM_ProjectDetailPage()'><b>confirmPosHasValueFHM_ProjectDetailPage</b><br>Test class: com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueFHM</td>
+<td></td>
+<td>69</td>
+<td>com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueFHM@8f4ea7c</td></tr>
+<tr>
+<td title='com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueFHM.confirmPosHasValueFHM_SlideshowPage()'><b>confirmPosHasValueFHM_SlideshowPage</b><br>Test class: com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueFHM</td>
+<td></td>
+<td>77</td>
+<td>com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueFHM@8f4ea7c</td></tr>
+<tr>
+<td title='com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueFHM.confirmPosHasValueFHM_VideoHubPage()'><b>confirmPosHasValueFHM_VideoHubPage</b><br>Test class: com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueFHM</td>
+<td></td>
+<td>37</td>
+<td>com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueFHM@8f4ea7c</td></tr>
+<tr>
+<td title='com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueRD.confirmPosHasValueRD_AboutPage()'><b>confirmPosHasValueRD_AboutPage</b><br>Test class: com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueRD</td>
+<td></td>
+<td>47</td>
+<td>com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueRD@36902638</td></tr>
+<tr>
+<td title='com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueRD.confirmPosHasValueRD_ArticlePage()'><b>confirmPosHasValueRD_ArticlePage</b><br>Test class: com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueRD</td>
+<td></td>
+<td>51</td>
+<td>com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueRD@36902638</td></tr>
+<tr>
+<td title='com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueRD.confirmPosHasValueRD_HomePage()'><b>confirmPosHasValueRD_HomePage</b><br>Test class: com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueRD</td>
+<td></td>
+<td>76</td>
+<td>com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueRD@36902638</td></tr>
+<tr>
+<td title='com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueRD.confirmPosHasValueRD_HubPage()'><b>confirmPosHasValueRD_HubPage</b><br>Test class: com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueRD</td>
+<td></td>
+<td>36</td>
+<td>com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueRD@36902638</td></tr>
+<tr>
+<td title='com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueRD.confirmPosHasValueRD_JokeHubPage()'><b>confirmPosHasValueRD_JokeHubPage</b><br>Test class: com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueRD</td>
+<td></td>
+<td>34</td>
+<td>com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueRD@36902638</td></tr>
+<tr>
+<td title='com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueRD.confirmPosHasValueRD_ListiclePage()'><b>confirmPosHasValueRD_ListiclePage</b><br>Test class: com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueRD</td>
+<td></td>
+<td>77</td>
+<td>com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueRD@36902638</td></tr>
+<tr>
+<td title='com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueRD.confirmPosHasValueRD_SlideshowPage()'><b>confirmPosHasValueRD_SlideshowPage</b><br>Test class: com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueRD</td>
+<td></td>
+<td>88</td>
+<td>com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueRD@36902638</td></tr>
+<tr>
+<td title='com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueRD.confirmPosHasValueRD_VideoHubPage()'><b>confirmPosHasValueRD_VideoHubPage</b><br>Test class: com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueRD</td>
+<td></td>
+<td>58</td>
+<td>com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueRD@36902638</td></tr>
+<tr>
+<td title='com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueTOH.confirmPosHasValueTOH_AboutPage()'><b>confirmPosHasValueTOH_AboutPage</b><br>Test class: com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueTOH</td>
+<td></td>
+<td>37</td>
+<td>com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueTOH@436813f3</td></tr>
+<tr>
+<td title='com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueTOH.confirmPosHasValueTOH_ArticlePage()'><b>confirmPosHasValueTOH_ArticlePage</b><br>Test class: com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueTOH</td>
+<td></td>
+<td>50</td>
+<td>com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueTOH@436813f3</td></tr>
+<tr>
+<td title='com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueTOH.confirmPosHasValueTOH_HomePage()'><b>confirmPosHasValueTOH_HomePage</b><br>Test class: com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueTOH</td>
+<td></td>
+<td>25</td>
+<td>com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueTOH@436813f3</td></tr>
+<tr>
+<td title='com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueTOH.confirmPosHasValueTOH_HubPage()'><b>confirmPosHasValueTOH_HubPage</b><br>Test class: com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueTOH</td>
+<td></td>
+<td>33</td>
+<td>com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueTOH@436813f3</td></tr>
+<tr>
+<td title='com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueTOH.confirmPosHasValueTOH_ListiclePage()'><b>confirmPosHasValueTOH_ListiclePage</b><br>Test class: com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueTOH</td>
+<td></td>
+<td>139</td>
+<td>com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueTOH@436813f3</td></tr>
+<tr>
+<td title='com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueTOH.confirmPosHasValueTOH_RecipeDetailPage()'><b>confirmPosHasValueTOH_RecipeDetailPage</b><br>Test class: com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueTOH</td>
+<td></td>
+<td>82</td>
+<td>com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueTOH@436813f3</td></tr>
+<tr>
+<td title='com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueTOH.confirmPosHasValueTOH_SlideshowPage()'><b>confirmPosHasValueTOH_SlideshowPage</b><br>Test class: com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueTOH</td>
+<td></td>
+<td>146</td>
+<td>com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueTOH@436813f3</td></tr>
+<tr>
+<td title='com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueTOH.confirmPosHasValueTOH_VideoHubPage()'><b>confirmPosHasValueTOH_VideoHubPage</b><br>Test class: com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueTOH</td>
+<td></td>
+<td>54</td>
+<td>com.toh.wpqa_65_check_for_key_value_pos.ConfirmPosHasValueTOH@436813f3</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GA suite">
+	<listeners>
+		<listener class-name="com.wp.listener.ExtentReporterNG" />
+	</listeners>
+	<test name="SRD HomePage">
+   	  	<classes>
+      		<class name="com.GA.SRD.SRD_HomePage"/>
+      	</classes>
+      </test>
+      <test name = "SRD Footer Tests">
+      	<classes>
+      		<class name="com.GA.SRD.SRD_FooterTests"/>
+      	</classes>
+      </test>
+      <test name = "SRD Article Page">
+      	<classes>
+     		 <class name="com.GA.SRD.SRD_ArticlePage"/>
+      	</classes>
+      </test>
+      <!-- <test name = "SRD Hub Page">
+      	<classes>
+      		<class name="com.GA.SRD.SRD_HubPage"/>
+      	</classes>
+      </test> -->
+      <test name = "SRD Header Test">
+      	<classes>
+      			<class name="com.GA.SRD.SRD_NavbarTest"/>
+      	</classes>
+      </test>
+      <test name = "SRD Listicle Page">
+      		<classes>
+      			<class name="com.GA.SRD.SRD_ListiclePage"/>
+      		</classes>
+      </test>
+      <test name = "SRD Video Page">
+      	<classes>
+      		<class name="com.GA.SRD.SRD_VideoPage"/>
+    </classes>
+  </test><!-- Test -->
+</suite> <!-- Suite -->

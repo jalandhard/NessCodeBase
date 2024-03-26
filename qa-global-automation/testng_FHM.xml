@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GA suite" parallel="instances" thread-count="1">
+	<listeners>
+		<listener class-name="com.wp.listener.ExtentReporterNG" />
+	</listeners>
+	<test name="FHM HomePage">
+		<classes>
+			<class name="com.GA.FHM.FHM_HomePage" />
+		</classes>
+	</test>
+	<test name="FHM Project detail Page">
+		<classes>
+			<class name="com.GA.FHM.FHM_ProjectDetailPage" />
+		</classes>
+	</test>
+	<test name="FHM Listicle Page">
+		<classes>
+			<class name="com.GA.FHM.FHM_ListiclePage" />
+		</classes>
+	</test>
+	<test name="FHM Footer Test">
+		<classes>
+			<class name="com.GA.FHM.FHM_FooterTests" />
+		</classes>
+	</test>
+	 <test name="FHM Navbars">
+		<classes>
+			<class name="com.GA.FHM.FHM_NavbarTests" />
+		</classes>
+	</test>
+	<!-- <test name=" FHM new Hub Page">
+		<classes>
+			<class name="com.GA.FHM.FHM_newHubPage" />
+		</classes>
+	</test> -->
+	<test name=" FHM Legacy Project detail Page">
+		<classes>
+			<class name="com.GA.FHM.FHM_LegacyProjectDetailPage" />
+		</classes>
+	</test>
+	<test name=" FHM Article Page">
+		<classes>
+			<class name="com.GA.FHM.FHM_ArticlePage" />
+		</classes>
+	</test>
+	<test name=" FHM video Page">
+		<classes>
+			<class name="com.GA.FHM.FHM_VideoPage" />
+		</classes>
+	</test>
+	<test name=" FHM Author Hub Page">
+		<classes>
+			<class name="com.GA.FHM.FHM_AuthorHubPage" />
+		</classes>
+	</test>
+</suite> 
