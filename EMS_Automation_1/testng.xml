@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="EMS suite" parallel="instances" thread-count="1">
+	<!-- 	<listeners>
+		<listener class-name="com.wp.listener.ExtentReporterNG" />
+	</listeners>
+	<test name="FHM HomePage">
+		<classes>
+			<class name="com.wpqa269.GA.FHM_HomePage" />
+		</classes>
+	</test>
+	<test name="FHM ProjectDetail Page">
+		<classes>
+			<class name="com.wpqa269.GA.FHM_ProjectDetailPage" />
+		</classes>
+	</test> -->
+
+</suite>

@@ -1,0 +1,110 @@
+package pages;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import general.BasePage;
+import utils.PageNames;
+
+public class ToggleFilter extends BasePage {
+	
+	//WebDriver driver;
+	public Logger logger = LogManager.getLogger("AppLogger");
+	
+	@FindBy(xpath = "((//div[@class='example-container']/mat-drawer-container/mat-drawer/div/form/p/mat-form-field)[1]/div/div)[1]/div/mat-select")
+	WebElement selectMagazine;
+	
+	@FindBy(xpath = "((//div[@class='example-container']/mat-drawer-container/mat-drawer/div/form/p/mat-form-field)[2]/div/div)[1]/div/mat-select")
+	WebElement selectionTypeId;
+	
+	@FindBy(xpath = "((//div[@class='example-container']/mat-drawer-container/mat-drawer/div/form/p/mat-form-field)[3]/div/div)[1]/div/mat-select")
+	WebElement deliveryMethodId;
+	
+	@FindBy(xpath = "((//div[@class='example-container']/mat-drawer-container/mat-drawer/div/form/p/mat-form-field)[4]/div/div)[1]/div/input")
+	WebElement selectionDateFrom;
+	
+	@FindBy(xpath = "((//div[@class='example-container']/mat-drawer-container/mat-drawer/div/form/p/mat-form-field)[5]/div/div)[1]/div/input")
+	WebElement selectionDateThru;
+	
+	@FindBy(xpath = "((//div[@class='example-container']/mat-drawer-container/mat-drawer/div/form/p/mat-form-field)[6]/div/div)[1]/div/input")
+	WebElement selectionNumber;
+	
+	@FindBy(xpath = "//span[text()='Find Now']")
+	WebElement findNowButton;
+	
+	@FindBy(xpath = "//span[text()='Reset Filter']")
+	WebElement resetFilterButton;
+	
+	public ToggleFilter(WebDriver driver) {
+		super(driver);
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+	}
+	
+	public void selectMagazine(String magazineName) {
+		selectDropdownByName(selectMagazine, magazineName);
+	}
+	
+	public void selectionTypeId(String selectionTypeId) {
+		selectDropdownByName(this.selectionTypeId, selectionTypeId);
+	}
+	
+	public void deliveryMethodId(String deliveryId) {
+		selectDropdownByName(deliveryMethodId, deliveryId);
+	}
+	
+	public void selectionDateFrom(String selectionDateFrom) {
+		writeText(this.selectionDateFrom, selectionDateFrom);
+	}
+	
+	public void selectionDateThru(String selectionDateThru) {
+		writeText(this.selectionDateThru, selectionDateThru);
+	}
+	
+	public void selectionNumber(String selectionNumber) {
+		writeText(this.selectionNumber, selectionNumber);
+	}
+	
+	public Object clickFindNowButton(String filterAppliedOnPage) {
+		click(findNowButton);
+		return createDynamicPageObject(filterAppliedOnPage);
+	}
+	
+	public Object clickResetFilterButton(String resetFilterAppliedOnPage) {
+		click(resetFilterButton);
+		return createDynamicPageObject(resetFilterAppliedOnPage);
+	}
+	
+	public Object createDynamicPageObject(String dynamicPageName) {
+		Object object = null;
+		//Create and return the object based on filterAppliedOnPage value
+		if(dynamicPageName.equals(PageNames.CATEGORIES.name()))
+			object = new CategoriesPage(driver);
+		else if(dynamicPageName.equals(PageNames.COMBO_ADJUSTMENT_PERCENTAGES.name()))
+			object = new ComboAdjustmentPercentagesPage();
+		else if(dynamicPageName.equals(PageNames.EFFORTS.name()))
+			object = new EffortsPage();
+		else if(dynamicPageName.equals(PageNames.EXPORT_PACKAGES.name()))
+			object = new ExportPackagesPage();
+		else if(dynamicPageName.equals(PageNames.EXPORTS_OFFERS.name()))
+			object = new ExportOffersPage();
+		else if(dynamicPageName.equals(PageNames.HOST_TARGET_MAGAZINE.name()))
+			object = new HostTargetMagazinePage();
+		else if(dynamicPageName.equals(PageNames.OFFERS.name()))
+			object = new OffersPage();
+		else if(dynamicPageName.equals(PageNames.PACKAGES.name()))
+			object = new PackagesPage();
+		else if(dynamicPageName.equals(PageNames.SEGMENTS.name()))
+			object = new SegmentsPage();
+		else if(dynamicPageName.equals(PageNames.SELECTION_DATES.name()))
+			object = new SelectionDatesPage(driver);
+		else if(dynamicPageName.equals(PageNames.SELECTIONS.name()))
+			object = new SelectionsPage();
+		return object;
+	}
+
+}

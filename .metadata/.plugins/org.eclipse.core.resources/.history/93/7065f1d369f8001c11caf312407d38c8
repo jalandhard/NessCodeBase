@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="EMS suite" parallel="instances" thread-count="1">
+	<listeners>
+		<listener class-name="com.wp.listener.ExtentReporterNG" />
+	</listeners>
+	<test name="FHM HomePage">
+		<classes>
+			<class name="com.wpqa269.GA.FHM_HomePage" />
+		</classes>
+	</test>
+	<test name="FHM ProjectDetail Page">
+		<classes>
+			<class name="com.wpqa269.GA.FHM_ProjectDetailPage" />
+		</classes>
+	</test>
+	<test name="Navigation Bar">
+		<classes>
+			<class name="com.wpqa269.GA.NavbarTests" />
+		</classes>
+	</test>
+	<test name="CPT Footer Test">
+		<classes>
+			<class name="com.wpqa269.GA.CPT_FooterTests" />
+		</classes>
+	</test>
+	<test name="CPT Listicle Page">
+		<classes>
+			<class name="com.wpqa269.GA.CPT_ListiclePage" />
+		</classes>
+	</test>
+	<test name="CPT Hub Page">
+		<classes>
+			<class name="com.wpqa269.GA.CPT_HubPage" />
+		</classes>
+	</test>
+	<test name="CPT Video Page">
+		<classes>
+			<class name="com.wpqa269.GA.CPT_VideoPage" />
+		</classes>
+	</test>
+	<test name="CPT Article Page">
+		<classes>
+			<class name="com.wpqa269.GA.CPT_ArticlePage" />
+		</classes>
+	</test>
+
+	<!--  <class name="com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_HubPage"/>
+	     <methods>
+        	<include name = "verify_BrowseByList_CPT_HubPage"></include>
+        	</methods>
+        </class>
+     	<class name="com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_VideoPage"/>
+       <class name="com.wp.wpqa_64_verify_global_variables_CPT.VerifyGlobalVariables_CPT_ArticlePage"/>
+    </classes>
+  </test>  -->
+
+</suite>
