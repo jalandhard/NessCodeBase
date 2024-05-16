@@ -7,7 +7,7 @@ public class Sample {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int number = 3999;
+		int number = 3993;
 		System.out.println(number >= 10?calculate(number - 10):number - 1);
 	}
 	
